@@ -95,8 +95,9 @@ class TestEndToEnd(unittest.TestCase):
     def setUpClass(cls):
         cls.port = free_port()
         cls.proc = subprocess.Popen(
-            [sys.executable, str(ROOT / "mock_agent.py"),
+            [sys.executable, "-m", "pawbreak.mock_agent",
              "--port", str(cls.port)],
+            cwd=ROOT,
             stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         for _ in range(50):
             try:

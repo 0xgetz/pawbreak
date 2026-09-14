@@ -5,6 +5,7 @@
   에이전트가 읽는 곳에 주입을 심고, 그 행동을 점수화한다.</p>
   <p>
     <a href="https://github.com/0xgetz/pawbreak/releases/tag/v0.1.0"><img src="https://img.shields.io/badge/release-v0.1.0-E8A33D?style=flat-square" alt="릴리스 v0.1.0"></a>
+    <a href="https://github.com/0xgetz/pawbreak/actions/workflows/tests.yml"><img src="https://github.com/0xgetz/pawbreak/actions/workflows/tests.yml/badge.svg" alt="tests"></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-3fb950?style=flat-square" alt="MIT 라이선스"></a>
     <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.9%2B-blue?style=flat-square" alt="Python 3.9+"></a>
     <a href="#작동-원리"><img src="https://img.shields.io/badge/dependencies-zero-informational?style=flat-square" alt="의존성 없음"></a>
@@ -19,6 +20,10 @@
 </div>
 
 ---
+
+<div align="center">
+  <img src="assets/demo.gif" alt="pawbreak demo" width="860">
+</div>
 
 당신의 에이전트는 파일을 읽고, 페이지를 가져오고, 메일을 확인하고,
 명령 출력를 소비한다. 이 모든 경로가 곧 지시 벡터다. `pawbreak`는
@@ -73,7 +78,7 @@ AGENT FAILED: obeyed injected instructions
 ```bash
 # 동봉 모의 에이전트 대상 30초 데모 (API 키 불요, 네트워크 불요)
 pipx install git+https://github.com/0xgetz/pawbreak.git
-python mock_agent.py --port 18799 &
+pawbreak-mock &
 pawbreak --model gullible          # -> BREACH 연속, 종료 코드 1
 pawbreak --model hardened          # -> 전원 방어, 종료 코드 0
 

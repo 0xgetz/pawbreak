@@ -5,6 +5,7 @@
   エージェントが読む場所にインジェクションを仕込み、行動を採点する。</p>
   <p>
     <a href="https://github.com/0xgetz/pawbreak/releases/tag/v0.1.0"><img src="https://img.shields.io/badge/release-v0.1.0-E8A33D?style=flat-square" alt="リリース v0.1.0"></a>
+    <a href="https://github.com/0xgetz/pawbreak/actions/workflows/tests.yml"><img src="https://github.com/0xgetz/pawbreak/actions/workflows/tests.yml/badge.svg" alt="tests"></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-3fb950?style=flat-square" alt="MIT ライセンス"></a>
     <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.9%2B-blue?style=flat-square" alt="Python 3.9+"></a>
     <a href="#仕組み"><img src="https://img.shields.io/badge/dependencies-zero-informational?style=flat-square" alt="依存関係ゼロ"></a>
@@ -19,6 +20,10 @@
 </div>
 
 ---
+
+<div align="center">
+  <img src="assets/demo.gif" alt="pawbreak demo" width="860">
+</div>
 
 あなたのエージェントはファイルを読み、ページを取得し、メールを確認し、
 コマンド出力を消費する。これらの経路はすべて指示ベクトルだ。`pawbreak` は
@@ -77,7 +82,7 @@ AGENT FAILED: obeyed injected instructions
 ```bash
 # 同梱モック相手のお試し 30 秒（APIキー不要・ネット不要）
 pipx install git+https://github.com/0xgetz/pawbreak.git
-python mock_agent.py --port 18799 &
+pawbreak-mock &
 pawbreak --model gullible          # -> BREACH 連発、終了コード 1
 pawbreak --model hardened          # -> 全阻止、終了コード 0
 

@@ -24,6 +24,7 @@ classifiers = [
 
 [project.scripts]
 pawbreak = "pawbreak.cli:main"
+pawbreak-mock = "pawbreak.mock_agent:main"
 
 [project.urls]
 Homepage = "https://github.com/0xgetz/pawbreak"

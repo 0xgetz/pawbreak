@@ -5,6 +5,7 @@
   Tanam injeksi di tempat agent baca. Skor apa yang mereka lakukan.</p>
   <p>
     <a href="https://github.com/0xgetz/pawbreak/releases/tag/v0.1.0"><img src="https://img.shields.io/badge/release-v0.1.0-E8A33D?style=flat-square" alt="rilis v0.1.0"></a>
+    <a href="https://github.com/0xgetz/pawbreak/actions/workflows/tests.yml"><img src="https://github.com/0xgetz/pawbreak/actions/workflows/tests.yml/badge.svg" alt="tests"></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-3fb950?style=flat-square" alt="lisensi MIT"></a>
     <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.9%2B-blue?style=flat-square" alt="Python 3.9+"></a>
     <a href="#cara-kerja"><img src="https://img.shields.io/badge/dependencies-zero-informational?style=flat-square" alt="nol dependensi"></a>
@@ -19,6 +20,10 @@
 </div>
 
 ---
+
+<div align="center">
+  <img src="assets/demo.gif" alt="pawbreak demo" width="860">
+</div>
 
 Agent lo baca file, fetch halaman, cek email, dan nyerap output command.
 Semua kanal itu adalah vektor instruksi. `pawbreak` nanam payload
@@ -75,7 +80,7 @@ Nol dependensi runtime, cuma stdlib Python 3.9+. Mock endpoint bind ke
 ```bash
 # demo 30 detik lawan mock agent bawaan (tanpa API key, tanpa internet)
 pipx install git+https://github.com/0xgetz/pawbreak.git
-python mock_agent.py --port 18799 &
+pawbreak-mock &
 pawbreak --model gullible          # -> baris BREACH, exit 1
 pawbreak --model hardened          # -> semua held, exit 0
 

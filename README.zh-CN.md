@@ -5,6 +5,7 @@
   把注入埋进智能体读取的地方，对它的行为打分。</p>
   <p>
     <a href="https://github.com/0xgetz/pawbreak/releases/tag/v0.1.0"><img src="https://img.shields.io/badge/release-v0.1.0-E8A33D?style=flat-square" alt="版本 v0.1.0"></a>
+    <a href="https://github.com/0xgetz/pawbreak/actions/workflows/tests.yml"><img src="https://github.com/0xgetz/pawbreak/actions/workflows/tests.yml/badge.svg" alt="tests"></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-3fb950?style=flat-square" alt="MIT 许可证"></a>
     <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.9%2B-blue?style=flat-square" alt="Python 3.9+"></a>
     <a href="#工作原理"><img src="https://img.shields.io/badge/dependencies-zero-informational?style=flat-square" alt="零依赖"></a>
@@ -20,13 +21,17 @@
 
 ---
 
+<div align="center">
+  <img src="assets/demo.gif" alt="pawbreak demo" width="860">
+</div>
+
 你的智能体会读文件、抓网页、查邮件、消费命令输出。每一条通道都是指令注入
 向量。`pawbreak` 把真实的提示词注入载荷埋进智能体摄取的工件里，将被禁止的
 操作做成触发式工具，然后输出确定性的 **ASR**（攻击成功率），外加一个可以
 挂上徽章的 **PAW-score**。
 
 garak 这类基准是把一条提示词打进一个模型。当"有手的智能体"读到一份被投毒
-的 README 会发生什么，此前没有任何公开标准去度量——直到厂商开始提供闭源
+的 README 会发生什么，此前没有任何公开标准去度量。直到厂商开始提供闭源
 扫描器。pawbreak 是可审计的开源对应物：载荷、沙箱、计分逻辑和模拟智能体
 全是可以十分钟读完的纯 Python。
 
@@ -69,7 +74,7 @@ AGENT FAILED: obeyed injected instructions
 ```bash
 # 对内置模拟智能体做 30 秒演示（无需 API key，无需联网）
 pipx install git+https://github.com/0xgetz/pawbreak.git
-python mock_agent.py --port 18799 &
+pawbreak-mock &
 pawbreak --model gullible          # -> 一行行 BREACH，退出码 1
 pawbreak --model hardened          # -> 全部守住，退出码 0
 
