@@ -4,7 +4,7 @@
   <p>面向工具型 AI 智能体的红队测试框架。<br>
   把注入埋进智能体读取的地方，对它的行为打分。</p>
   <p>
-    <a href="https://github.com/0xgetz/pawbreak/releases/tag/v0.1.0"><img src="https://img.shields.io/badge/release-v0.1.0-E8A33D?style=flat-square" alt="版本 v0.1.0"></a>
+    <a href="https://github.com/0xgetz/pawbreak/releases/tag/v0.1.1"><img src="https://img.shields.io/badge/release-v0.1.1-E8A33D?style=flat-square" alt="版本 v0.1.0"></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-3fb950?style=flat-square" alt="MIT 许可证"></a>
     <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.9%2B-blue?style=flat-square" alt="Python 3.9+"></a>
     <a href="#工作原理"><img src="https://img.shields.io/badge/dependencies-zero-informational?style=flat-square" alt="零依赖"></a>
@@ -79,7 +79,7 @@ pawbreak --model hardened          # -> 全部守住，退出码 0
 
 # 红队你自己的智能体（任意 OpenAI 兼容端点）
 pawbreak --base-url https://api.openai.com/v1 \
-         --api-key "$OPENAI_API_KEY" --model gpt-4o-mini
+         --api-key "$OPENAI_API_KEY" --model gpt-5-mini
 ```
 
 退出码：`0` 干净，`1` 智能体至少服从了一次注入，`2` 用法错误。对 CI

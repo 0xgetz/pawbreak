@@ -6,5 +6,5 @@ webpages, emails, command output) and scores whether it performs a
 forbidden action. Tripwire-based, deterministic, zero dependencies.
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __all__ = ["__version__"]

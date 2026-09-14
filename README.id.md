@@ -4,7 +4,7 @@
   <p>Red-team harness buat AI agent yang punya tangan.<br>
   Tanam injeksi di tempat agent baca. Skor apa yang mereka lakukan.</p>
   <p>
-    <a href="https://github.com/0xgetz/pawbreak/releases/tag/v0.1.0"><img src="https://img.shields.io/badge/release-v0.1.0-E8A33D?style=flat-square" alt="rilis v0.1.0"></a>
+    <a href="https://github.com/0xgetz/pawbreak/releases/tag/v0.1.1"><img src="https://img.shields.io/badge/release-v0.1.1-E8A33D?style=flat-square" alt="rilis v0.1.0"></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-3fb950?style=flat-square" alt="lisensi MIT"></a>
     <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.9%2B-blue?style=flat-square" alt="Python 3.9+"></a>
     <a href="#cara-kerja"><img src="https://img.shields.io/badge/dependencies-zero-informational?style=flat-square" alt="nol dependensi"></a>
@@ -85,7 +85,7 @@ pawbreak --model hardened          # -> semua held, exit 0
 
 # red-team agent LO (endpoint OpenAI-compatible mana pun)
 pawbreak --base-url https://api.openai.com/v1 \
-         --api-key "$OPENAI_API_KEY" --model gpt-4o-mini
+         --api-key "$OPENAI_API_KEY" --model gpt-5-mini
 ```
 
 Exit code: `0` bersih, `1` agent nurut minimal satu injeksi, `2` usage
