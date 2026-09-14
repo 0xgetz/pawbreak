@@ -5,7 +5,6 @@
   Plant injections where agents read. Score what they do.</p>
   <p>
     <a href="https://github.com/0xgetz/pawbreak/releases/tag/v0.1.0"><img src="https://img.shields.io/badge/release-v0.1.0-E8A33D?style=flat-square" alt="release v0.1.0"></a>
-    <a href="https://github.com/0xgetz/pawbreak/actions/workflows/tests.yml"><img src="https://github.com/0xgetz/pawbreak/actions/workflows/tests.yml/badge.svg" alt="tests"></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-3fb950?style=flat-square" alt="MIT license"></a>
     <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.9%2B-blue?style=flat-square" alt="Python 3.9+"></a>
     <a href="#how-it-works"><img src="https://img.shields.io/badge/dependencies-zero-informational?style=flat-square" alt="zero dependencies"></a>

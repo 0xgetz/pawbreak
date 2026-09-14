@@ -5,7 +5,6 @@
   에이전트가 읽는 곳에 주입을 심고, 그 행동을 점수화한다.</p>
   <p>
     <a href="https://github.com/0xgetz/pawbreak/releases/tag/v0.1.0"><img src="https://img.shields.io/badge/release-v0.1.0-E8A33D?style=flat-square" alt="릴리스 v0.1.0"></a>
-    <a href="https://github.com/0xgetz/pawbreak/actions/workflows/tests.yml"><img src="https://github.com/0xgetz/pawbreak/actions/workflows/tests.yml/badge.svg" alt="tests"></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-3fb950?style=flat-square" alt="MIT 라이선스"></a>
     <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.9%2B-blue?style=flat-square" alt="Python 3.9+"></a>
     <a href="#작동-원리"><img src="https://img.shields.io/badge/dependencies-zero-informational?style=flat-square" alt="의존성 없음"></a>
