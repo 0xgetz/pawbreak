@@ -4,7 +4,7 @@
   <p>ツールを使う AI エージェントのためのレッドチーミング基盤。<br>
   エージェントが読む場所にインジェクションを仕込み、行動を採点する。</p>
   <p>
-    <a href="https://github.com/0xgetz/pawbreak/releases/tag/v0.1.1"><img src="https://img.shields.io/badge/release-v0.1.1-E8A33D?style=flat-square" alt="リリース v0.1.0"></a>
+    <a href="https://github.com/0xgetz/pawbreak/releases/tag/v0.1.1"><img src="https://img.shields.io/badge/release-v0.1.1-E8A33D?style=flat-square" alt="リリース v0.1.1"></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-3fb950?style=flat-square" alt="MIT ライセンス"></a>
     <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.9%2B-blue?style=flat-square" alt="Python 3.9+"></a>
     <a href="#仕組み"><img src="https://img.shields.io/badge/dependencies-zero-informational?style=flat-square" alt="依存関係ゼロ"></a>
