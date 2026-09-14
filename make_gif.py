@@ -53,8 +53,9 @@ CMD = ("$ pipx install git+https://github.com/0xgetz/pawbreak.git",
 
 frames = []
 full = "$ pawbreak --model gullible"
-for i in range(0, len(full) + 1, 3):
+for i in range(0, len(full) + 1, 4):
     frames.append(base(lambda d: None, (CMD[0], full[:i]), cursor=True))
+n_type = len(frames)
 
 def stream(n, verdict=None):
     def fn(d):
@@ -102,8 +103,8 @@ frames.append(base(card, None))
 frames.append(base(card, None))
 frames.append(base(card, None))
 
-durations = [60] * 8 + [350] * 7 + [1500] * 2 + [2000] * 3
-assert len(durations) == len(frames), (len(durations), len(frames))
+durations = [60] * n_type + [350] * 7 + [1500] * 2 + [2000] * 3
+assert len(durations) == len(frames) == n_type + 12, (len(durations), len(frames))
 frames[0].save("assets/demo.gif", save_all=True, append_images=frames[1:],
                duration=durations, loop=0, optimize=True)
 print("frames:", len(frames))
