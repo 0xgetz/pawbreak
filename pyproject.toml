@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pawbreak"
+version = "0.1.0"
+description = "Red-team harness for tool-using AI agents. Injection payloads planted in files, web pages, emails and command output; tripwire-scored ASR. Zero dependencies."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "0xgetz" }]
+keywords = ["ai-security", "prompt-injection", "red-teaming", "llm",
+            "agents", "asr", "evaluation", "mcp"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+]
+
+[project.scripts]
+pawbreak = "pawbreak.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/0xgetz/pawbreak"
+Releases = "https://github.com/0xgetz/pawbreak/releases"
+
+[tool.setuptools]
+packages = ["pawbreak"]

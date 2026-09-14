@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- pawbreak mark v4: paw behind a thick protective ring torn open at 2
+       o'clock. The tear is carved with a background-colored jag (so the ring
+       really ends in angular edges) and the amber crack runs exactly inside
+       that same jag. One fracture axis, no bolt idiom. -->
+  <rect width="512" height="512" rx="104" fill="#161B22"/>
+
+  <!-- full protective ring -->
+  <circle cx="256" cy="256" r="176" fill="none" stroke="#66748A"
+          stroke-width="34"/>
+
+  <!-- the tear: a jagged background-colored channel crossing the ring -->
+  <path d="M 336 44 L 362 96 L 336 128 L 368 160 L 344 196 L 392 232
+           L 436 196 L 402 158 L 428 122 L 396 92 L 418 44 Z"
+        fill="#161B22"/>
+
+  <!-- amber crack: the centerline of that same channel, sharp caps -->
+  <path d="M 378 46 L 382 94 L 368 126 L 398 160 L 386 198 L 392 226"
+        stroke="#E8A33D" stroke-width="17" fill="none" stroke-linecap="butt"
+        stroke-linejoin="miter"/>
+  <!-- hairline branch, classic crack detail -->
+  <path d="M 368 126 L 344 138" stroke="#E8A33D" stroke-width="10"
+        fill="none" stroke-linecap="butt"/>
+
+  <!-- clean paw -->
+  <g fill="#E6EDF3">
+    <path d="M 256 258
+             C 316 258 352 296 352 334
+             C 352 372 318 388 256 388
+             C 194 388 160 372 160 334
+             C 160 296 196 258 256 258 Z"/>
+    <ellipse cx="166" cy="236" rx="25" ry="31" transform="rotate(-18 166 236)"/>
+    <ellipse cx="222" cy="192" rx="25" ry="33" transform="rotate(-6 222 192)"/>
+    <ellipse cx="290" cy="192" rx="25" ry="33" transform="rotate(6 290 192)"/>
+    <ellipse cx="346" cy="236" rx="25" ry="31" transform="rotate(18 346 236)"/>
+  </g>
+</svg>
